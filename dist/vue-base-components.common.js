@@ -94,7 +94,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": function() { return /* binding */ entry_lib; }
+  "BaseInput": function() { return /* reexport */ BaseInput; }
 });
 
 ;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
@@ -148,24 +148,9 @@ const __exports__ = /*#__PURE__*/(0,exportHelper/* default */.Z)(Inputvue_type_s
 /* harmony default export */ var Input = (__exports__);
 ;// CONCATENATED MODULE: ./src/install.js
 
-const BaseInputComponents = {
-  install(Vue) {
-    // Let's register our component globally
-    // https://vuejs.org/v2/guide/components-registration.html
-    Vue.component("base-input", Input);
-  }
+const BaseInput = Input;
+;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib-no-default.js
 
-}; // Automatic installation if Vue has been added to the global scope.
-
-if (typeof window !== "undefined" && window.Vue) {
-  window.Vue.use(BaseInputComponents);
-}
-
-/* harmony default export */ var install = (BaseInputComponents);
-;// CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
-
-
-/* harmony default export */ var entry_lib = (install);
 
 
 }();
